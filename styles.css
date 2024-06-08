@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #13f5ea;
+    color: #141414;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 19px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px 20px;
+    margin: 20px 0; 
+}
+
+section#about {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Offset for fixed header */
+}
+
+
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    color: #ff6347;
+    text-align: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    p{
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#illustrator{
+    width: 100%;
+}
+
+/* Gallery Styles */
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+
+.photoshop, .blender{
+    margin-top:30px ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    
+}
+
+
+.photoshop .work-item img{
+    height: 100%;
+}
+
+.work-item {
+    width: 30rem;
+    /* height: 34rem; */
+    object-fit: cover;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    
+}
+
+.gallery1{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content:flex-start;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.test{
+    height: 100%;
+    object-fit: cover;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.test1{
+    width: 45rem;
+}
+
+
+
+.work-item img {
+    width: 100%;
+    /* height: 100%;  */
+    /* display: block; */
+   
+}
+
+.work-item h3 {
+    margin: 10px;
+    font-size: 1.2em;
+    color: #ff6347;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+section#contact {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section#contact p a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section#contact p a:hover {
+    text-decoration: underline;
+}
+
+#contact p{
+    margin-top: 20px;
+}
+
